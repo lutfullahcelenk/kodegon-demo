@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-dots {
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  z-index: 1;
+  width: fit-content !important;
+}
+
+button.slick-arrow.slick-prev {
+  top: 89%;
+  font-size: 2rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+button.slick-arrow.slick-next {
+  top: 89%;
+  font-size: 2rem;
+  left: 7rem;
+  z-index: 2;
+}
+
+button.slick-arrow.slick-prev::before {
+  content: "⟵";
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+}
+
+button.slick-arrow.slick-next::before {
+  content: "⟶";
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+}
