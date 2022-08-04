@@ -13,7 +13,7 @@ const Navbar = ({selected, setSelected}:INavbar) => {
         {routes.map((item: any) => (
           <div
             key={item.id}
-            className={`cursor-pointer font-medium text-sm pt-7 pb-4 hover:text-orangeRed transition duration-300 capitalize sm:w-max
+            className={`cursor-pointer font-medium text-sm pt-7 pb-4 hover:text-orangeRed transition duration-300 capitalize sm:w-max flex flex-nowrap min-w-max
                   ${
                     selected !== item.name
                       ? "text-gray-400"
