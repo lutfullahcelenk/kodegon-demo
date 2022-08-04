@@ -9,12 +9,11 @@ type INavbar = {
 const Navbar = ({selected, setSelected}:INavbar) => {
 
   return (
-    <div className="bg-white shadow-lg px-5 sm:px-16 overflow-x-auto">
-      <div className="w-full  flex space-x-9">
+    <div className="bg-white shadow-lg px-5 sm:px-16 w-full flex space-x-9 overflow-x-auto">
         {routes.map((item: any) => (
-          <nav
+          <div
             key={item.id}
-            className={`cursor-pointer font-medium text-sm pt-7 pb-4 hover:text-orangeRed transition duration-300 capitalize
+            className={`cursor-pointer font-medium text-sm pt-7 pb-4 hover:text-orangeRed transition duration-300 capitalize sm:w-max
                   ${
                     selected !== item.name
                       ? "text-gray-400"
@@ -25,10 +24,9 @@ const Navbar = ({selected, setSelected}:INavbar) => {
             }}
           >
             {item.name}
-          </nav>
+          </div>
         ))}
       </div>
-    </div>
   );
 };
 

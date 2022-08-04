@@ -5,6 +5,7 @@ import card3 from "../assets/card3.png";
 
 export const generalData = [
   {
+    id: 1,
     title: "Lorem ipsum ",
     author: "Hüsnü Taner ",
     content:
@@ -13,6 +14,7 @@ export const generalData = [
     image: card1,
   },
   {
+    id: 2,
     title: "Nulla semper metus",
     author: "Mustafa Serkan Tiryaki",
     content:
@@ -21,6 +23,7 @@ export const generalData = [
     image: card2,
   },
   {
+    id: 3,
     title: "Suspendisse tempus dignissim lacus ac tincidunt",
     author: "Kerim Değirmenci ",
     content:
@@ -29,6 +32,7 @@ export const generalData = [
     image: card3,
   },
   {
+    id: 4,
     title: "Integer dignissim ",
     author: "Ebu Bekir Behram ",
     content:
@@ -37,6 +41,7 @@ export const generalData = [
     image: card1,
   },
   {
+    id: 5,
     title: "Suspendisse tempus dignissim lacus ac tincidunt",
     author: "Kerim Değirmenci ",
     content:
@@ -45,6 +50,7 @@ export const generalData = [
     image: card2,
   },
   {
+    id: 6,
     title: "Integer dignissim ",
     author: "Ebu Bekir Behram ",
     content:

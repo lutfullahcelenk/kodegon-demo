@@ -10,7 +10,6 @@ const Content = ({ selected }: IContent) => {
   const [moreText, setMoreText] = useState(false);
   const { xs } = useResponsive();
   const title = content.filter((text: any) => text.title === selected);
-  console.log("title", title);
 
   return (
     <div className="flex flex-col p-5 sm:p-16">
