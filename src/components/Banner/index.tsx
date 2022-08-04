@@ -15,8 +15,12 @@ const Banner = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    customPaging: (i:any) => (
-      <div className={`border border-gray-100 m-2 p-1 bg-transparent ${i && "border-red-400"}`}></div>
+    customPaging: (i: any) => (
+      <div
+        className={`border border-gray-100 m-4 p-1 bg-transparent ${
+          i && "border-white"
+        }`}
+      ></div>
     ),
   };
 

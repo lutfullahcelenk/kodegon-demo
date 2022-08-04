@@ -4,7 +4,7 @@
 
 .slick-dots {
   position: absolute;
-  top: 91%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
@@ -38,4 +38,12 @@ button.slick-arrow.slick-next::before {
   font-size: 2rem;
   z-index: 1;
   position: absolute;
+}
+
+@media (max-width:768px) {
+
+  button.slick-arrow.slick-prev::before,
+  button.slick-arrow.slick-next::before {
+      display: none;
+  }
 }
