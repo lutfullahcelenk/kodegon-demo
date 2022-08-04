@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+//components
+import Banner from "./components/Banner";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="flex flex-col">
+      <Banner />
+    </div>
+  );
+};
 
-export default App
+export default App;
