@@ -12,12 +12,12 @@ const Content = ({ selected }: IContent) => {
   const title = content.filter((text: any) => text.title === selected);
 
   return (
-    <div className="flex flex-col p-5 sm:p-16">
+    <div className="flex flex-col p-5 sm:p-16 pt-10">
       <h1 className="text-2xl sm:text-3xl font-bold border-b-2 pb-1 border-orangeRed max-w-fit">
         {title[0].title}
       </h1>
 
-      <div className="max-w-screen-md flex flex-col text-justify">
+      <div className="max-w-screen-md flex flex-col text-justify font-normal">
         <p className="pb-4 text-base pt-10">{title[0].content1}</p>
         <p className="py-4 text-base">{title[0].content2}</p>
 
